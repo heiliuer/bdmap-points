@@ -1,0 +1,12 @@
+{
+  "name": "bdmap-points",
+  "version": "0.0.1",
+  "scripts": {
+    "server": "http-server -p 9999",
+    "generate": "node generate/readefile.js"
+  },
+  "dependencies": {
+    "dateformat": "^3.0.2",
+    "line-reader": "^0.4.0"
+  }
+}
