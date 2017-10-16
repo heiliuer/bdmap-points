@@ -7,8 +7,8 @@ var dateFormat = require('dateformat');
 const jsonDataArray = []
 
 
-const SQL_FILE = 'sign_in_test.sql';
-// const SQL_FILE = 'sign_in_bak.sql';
+// const SQL_FILE = 'sign_in_test.sql';
+const SQL_FILE = 'sign_in.sql';
 lineReader.eachLine(path.join(__dirname, SQL_FILE), function (line, last) {
     // console.log(line);
     const items = line.split(',');
@@ -53,7 +53,7 @@ function bd_encrypt(gg_lon, gg_lat) {
     };
 }
 
-const MAX_COUNT = 100;
+const MAX_COUNT = -1;
 
 function writeDatas() {
     var fs = require('fs');
